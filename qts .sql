@@ -1,57 +1,57 @@
-#-- 1
+# 1
 SELECT * 
 FROM `client`;
-#-- 2
+# 2
 SELECT * 
 FROM `produit`;
-#-- 3
+# 3
 SELECT `numClient` as `Numero client`,`villeClient` as `Ville client`
 FROM `client`;
-#-- 4
+# 4
 SELECT `numClient` as `Numero`,`raisonSocial` as `Raison Social`, `telephone`
 FROM `client`;
-#-- 5
+# 5
 SELECT *
 FROM `client`
 WHERE `numClient` = 15;
-#-- 6
+# 6
 SELECT * 
 FROM `client` 
 ORDER BY `raisonSocial` DESC;
-#--7
+#7
 SELECT * 
 FROM `client`
 ORDER BY `raisonSocial` DESC,`villeClient` ASC;
-#-- 8
+# 8
 SELECT * 
 FROM `client` 
 WHERE `raisonSocial` LIKE 'S%';
-#-- 9
+# 9
 SELECT * 
 FROM `client` 
 WHERE `raisonSocial` LIKE '%E';
-#-- 10
+# 10
 SELECT * 
 FROM `client` 
 WHERE `raisonSocial` LIKE 'A%E';
-#-- 11
+# 11
 SELECT * 
 FROM `client` 
 WHERE `raisonSocial` LIKE 'A%'
 OR `raisonSocial` LIKE '%E';
-#-- 12
+# 12
 SELECT *
 FROM `client`
 WHERE `villeClient` IN ('Casablanca','Ouarzazate','Rabat');
-#-- 13
+# 13
 SELECT *
 FROM `produit`
 WHERE `prixUnitaire` = 300;
-#-- 14
+# 14
 SELECT *
 FROM `produit`
 WHERE `prixUnitaire` < 300;
-#-- 15
+# 15
 SELECT *
 FROM `produit`
 WHERE `prixUnitaire` BETWEEN 300 AND 5000;
